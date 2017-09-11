@@ -18,7 +18,7 @@ public class ProcessController
 		System.out.println("Print print print print print print");
 		PlayDohCircle firstCircle = new PlayDohCircle();
 		PlayDohCircle secondCircle;
-		secondCircle = new PlayDohCircle();
+		secondCircle = new PlayDohCircle(10);
 		
 		System.out.println("Look I made a circle");
 		System.out.println(firstCircle);
