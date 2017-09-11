@@ -1,8 +1,27 @@
 package process.controller;
 
+import process.model.PlayDohCircle;
+
 public class ProcessController
 {
-	public void start() {
+	
+	
+	
+	public ProcessController()
+	{
+		System.out.println("This is the constructor");
+		
+	}
+
+	public void start()
+	{
 		System.out.println("Print print print print print print");
+		PlayDohCircle firstCircle = new PlayDohCircle();
+		PlayDohCircle secondCircle;
+		secondCircle = new PlayDohCircle();
+		
+		System.out.println("Look I made a circle");
+		System.out.println(firstCircle);
+		System.out.println(secondCircle);
 	}
 }
