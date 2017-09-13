@@ -1,7 +1,9 @@
 package process.controller;
 
 import process.model.PlayDohCircle;
+import process.model.Cow;
 
+import java.util.Scanner;
 public class ProcessController
 {
 	
@@ -18,10 +20,25 @@ public class ProcessController
 		System.out.println("Print print print print print print");
 		PlayDohCircle firstCircle = new PlayDohCircle();
 		PlayDohCircle secondCircle;
-		secondCircle = new PlayDohCircle(10);
+		secondCircle = new PlayDohCircle();
 		
 		System.out.println("Look I made a circle");
 		System.out.println(firstCircle);
 		System.out.println(secondCircle);
+		
+		Scanner myScanner = new Scanner(System.in);
+		System.out.println("What size do you want the circle?");
+		
+		int circleSize = myScanner.nextInt();
+		
+		
+		PlayDohCircle thirdCircle = new PlayDohCircle(circleSize);
+		System.out.println(thirdCircle);
+		
+		Cow firstCow = new Cow("Jon");
+		System.out.println(firstCow);
 	}
+	
+	
+	
 }
